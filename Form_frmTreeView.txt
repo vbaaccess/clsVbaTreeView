@@ -1,0 +1,776 @@
+Version =20
+VersionRequired =20
+Checksum =-1708645126
+Begin Form
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    MinButton = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    AllowUpdating =4
+    ScrollBars =0
+    TabularCharSet =238
+    TabularFamily =0
+    BorderStyle =3
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    Cycle =1
+    GridY =10
+    Width =10110
+    DatasheetFontHeight =10
+    ItemSuffix =10
+    Left =1035
+    Top =165
+    Right =11145
+    Bottom =5520
+    DatasheetGridlinesColor =12632256
+    MaxRecords =900000
+    RecSrcDt = Begin
+        0x63866484f342e440
+    End
+    Caption ="Wybierz z drzewka"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xa6050000a2050000a2050000a205000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x010403009c003403039f00000100090000000000000001000700580201000100 ,
+        0x5802000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000000000005344444d ,
+        0x00060000000600004850204c617365724a657420313032300000000000000000 ,
+        0x0000000000000000000000000000000000000000010000000000000001000000 ,
+        0x0000000000000000010000000900000009000000090000000900000009000000 ,
+        0x0900000009000000090000000900000009000000090000000900000009000000 ,
+        0x090000000900000009000000090000000000000001000000010000001a040000 ,
+        0x0000000000000000000000000f0000005a000000000000000000000001000000 ,
+        0x000000000000000080808000ff000000ffff000000ff000000ffff000000ff00 ,
+        0xff00ff0000000000000000000000000000000000280000006400000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000de030000de0300000000000000000000 ,
+        0x0080000000000000000000000100000000000000000000000000000000000000 ,
+        0x000000000000000000000000418cf25f34030000000000000000000000800000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x080019003b000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000005553423030 ,
+        0x3100
+    End
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontCharSet =238
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            TextFontCharSet =238
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            TextFontCharSet =238
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+            AsianLineBreak =255
+        End
+        Begin ListBox
+            SpecialEffect =2
+            TextFontCharSet =238
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =5370
+            Name ="Szczegóły"
+            OnMouseMove ="[Event Procedure]"
+            GUID = Begin
+                0xabb3c25313df954b80481265345d327d
+            End
+            Begin
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Width =0
+                    Height =0
+                    FontSize =7
+                    Name ="cmdFocus"
+                    Caption ="Test"
+                    GUID = Begin
+                        0x6b74ec5d5c649447bd121e94a84ecc4a
+                    End
+                End
+                Begin ListBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =87
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    ColumnCount =6
+                    Left =160
+                    Top =-2
+                    Width =9937
+                    Height =5035
+                    TabIndex =1
+                    ForeColor =12582912
+                    Name ="Lst"
+                    RowSourceType ="Table/View/StoredProc"
+                    ColumnWidths ="0;0;0;0;0"
+                    StatusBarText ="Dwuklik rozwija zagnieżdżoną listę."
+                    OnDblClick ="[Event Procedure]"
+                    Tag ="GrowX GrowY"
+                    ControlTipText ="Dwuklik rozwija zagnieżdżoną listę."
+                    GUID = Begin
+                        0xedc3ce204536974e936066e3800e0cca
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =9780
+                    Top =5070
+                    Width =330
+                    Height =300
+                    FontWeight =700
+                    Name ="etyMResizer"
+                    Caption ="V"
+                    Tag ="MoveX MoveY"
+                    GUID = Begin
+                        0x32879b543a0ef8468cb6938bf24f32db
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Top =5070
+                    Width =345
+                    Height =300
+                    FontWeight =700
+                    Name ="etyMRolldown"
+                    Caption ="O"
+                    Tag ="MoveY"
+                    GUID = Begin
+                        0x39ec92a5de8cd74fa7c7bcb9f92fd838
+                    End
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =93
+                    AccessKey =84
+                    Left =510
+                    Top =5045
+                    Width =634
+                    Height =227
+                    FontSize =6
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="cmdTest"
+                    Caption ="&Test"
+                    OnClick ="[Event Procedure]"
+                    Tag ="MoveY"
+                    GUID = Begin
+                        0x2bdda2b147b8ab46a5c26f80afa6bfbb
+                    End
+                    UnicodeAccessKey =84
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =93
+                    AccessKey =84
+                    Left =1360
+                    Top =5045
+                    Width =784
+                    Height =227
+                    FontSize =6
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="cmdTest2"
+                    Caption ="&Test RST"
+                    Tag ="MoveY"
+                    GUID = Begin
+                        0xb0bcf3b5c59f444ea077ef3b95624058
+                    End
+                    UnicodeAccessKey =84
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Private Const INIT_STRING_EVENT = "[Event Procedure]"
+
+Private Const CurrentModeName = "frmTreeView"
+Private newTreeViewCaption As String
+Private newLstSql() As String
+Private SqlWhereTag As String
+
+'--- na potrzeby listy --- --- --- --- --- ---
+Const NodeNotEmpty = "+"
+Const NodeEmpty = "±"   'Chr(177)
+Const NodeExpanded = "¬"   '"·"  '"O" '"~"  '"×" '"•"      '»187
+
+Const wciecie = 5
+'--- ----------------- --- --- --- --- --- ---
+Dim ArrData
+Dim ArraySql() As String
+'--- ----------------- --- --- --- --- --- ---
+Private RstLst As Recordset
+Private Rst() As Recordset
+Private RstMax As Single
+
+Private LstNodeNotEmptyCount As Long
+Private LstNodeExpandedCount As Long
+
+Private LstStatusExpand As Single
+Private Const LstCollapsed = 0
+Private Const LstPartiallyExpanded = 1
+Private Const LstAllExpanded = 2
+
+Private wybraneID As Long
+Private TreeLevels As Long
+
+'--- rolldown - colaps/expand ---
+Private WithEvents m_objRolldown As Label
+Attribute m_objRolldown.VB_VarHelpID = -1
+
+'--- Resizer ---
+Private WithEvents m_objResizer As Label
+Attribute m_objResizer.VB_VarHelpID = -1
+
+Private WithEvents frmResize As clsFormResize
+Attribute frmResize.VB_VarHelpID = -1
+
+Private Sub DebugPrintListData()
+    Dim rstRow As String
+    RstLst.MoveFirst
+    
+    While Not RstLst.EOF
+                 rstRow = Right("0000" & RstLst.Fields("Lp"), 5)
+        rstRow = rstRow & ":" & RstLst.Fields("Poziom")
+        rstRow = rstRow & " (" & RstLst.Fields("IdPoziomu") & ":" & RstLst.Fields("ParentId") & ")"
+        rstRow = rstRow & Space(wciecie ^ (RstLst.Fields("Poziom") - 1))
+        rstRow = rstRow & RstLst.Fields("Opis")
+        
+        Debug.Print rstRow
+        RstLst.MoveNext
+    Wend
+    
+End Sub
+
+Private Sub SetColumnWidths()
+    Me.Lst.ColumnWidths = "0cm;0cm;0cm;0cm;;0cm"
+End Sub
+
+Private Function OpenArrRst(ArraySql As Variant)
+    Dim Sql As String
+    Dim RstSql As Recordset
+    
+    Dim RstLp As Single
+    
+    Sql = Join(ArraySql, ";")
+    RstMax = 0
+    
+    If OpenRst(RstSql, Sql) Then
+        RstLp = 1
+        ReDim Rst(1 To RstLp) As Recordset
+        Set Rst(RstLp) = RstSql
+        
+        Do
+            Set RstSql = RstSql.NextRecordset()
+            If Not RstSql Is Nothing Then
+                RstLp = RstLp + 1
+                ReDim Preserve Rst(1 To RstLp) As Recordset
+                Set Rst(RstLp) = RstSql
+            Else
+                RstMax = RstLp
+            End If
+            
+        Loop Until RstMax > 0
+        
+    End If
+
+End Function
+
+Private Sub Form_Open(Cancel As Integer)
+    '--- 1 ---
+    fTreeView_ReturnID = 0
+    
+    If IsNull(Me.OpenArgs) Then
+        Dim sNaglowek As String
+        Dim sSql As String
+        Dim sWhereTag As String
+        
+        sNaglowek = "Wybierz z drzewa"
+        sSql = "SELECT 0 AS [Id],NULL AS [ParentId], 0 AS [Ilosc], '-BRAK DANYCH-' AS [Opis]"
+        sWhereTag = "/*{{WHERE}}*/"
+        ArrData = Array(sNaglowek, sWhereTag, sSql)
+    Else
+        ArrData = Split(Me.OpenArgs, ";")
+    End If
+        
+    Call INIT_Data
+    Call UtworzPustyRST
+    Call UzupelnijDaneListy(1)
+End Sub
+
+Private Sub INIT_Data()
+    TreeLevels = UBound(ArrData) - 2 + 1
+
+    Dim sNaglowek As String
+    Dim vRow
+    Dim iPoz As Single
+    
+    ReDim ArraySql(1 To TreeLevels)
+    
+    For Each vRow In ArrData
+        If Len(sNaglowek) = 0 Then
+           'sNaglowek = ArrData(0)
+            sNaglowek = vRow
+        Else
+            If Len(SqlWhereTag) = 0 Then
+               'sNaglowek = ArrData(1)
+                SqlWhereTag = vRow
+            Else
+                iPoz = iPoz + 1
+                ArraySql(iPoz) = vRow
+               'ReDim Preserve ArraySql(1 To iPoz)
+            End If
+        End If
+        
+    Next vRow
+
+    If Len(sNaglowek) > 0 Then newTreeViewCaption = sNaglowek
+    
+End Sub
+
+Private Sub Form_Load()
+    '--- 2 ---
+    'SprawdzUprawnienia Me
+    'selectLang Me, "PL"
+    
+    Set frmResize = New clsFormResize
+    frmResize.INIT Me.Form
+    
+    Call SetTreeViewCaption
+    
+    Call InicjalizujDanePoczatkowe
+    
+    Me.CmdFocus.SetFocus
+End Sub
+
+Private Sub m_AddResizer()
+'
+' add resizing control to bottom righthand corner of userform
+'
+    Set m_objResizer = Me.EtyMResizer
+    
+    With m_objResizer
+        .FontName = "Marlett"
+        .FontBold = True
+        .fontsize = 14
+        
+        .BackStyle = fmBackStyleTransparent
+        .BorderStyle = fmBorderStyleNone
+        .Caption = "o"
+        .ForeColor = RGB(100, 100, 100)
+        .Top = Me.InsideHeight - .Height
+        .Left = Me.InsideWidth - .Width
+        
+        .ControlTipText = "Zmiana rozmiaru listy"   ' Maksymalizuj lub minimalizuj liste
+        .OnDblClick = INIT_STRING_EVENT
+    End With
+    
+End Sub
+
+Private Sub m_AddRolldown()
+'
+' add resizing control to bottom righthand corner of userform
+'
+    Set m_objRolldown = Me.etyMRolldown
+    With m_objRolldown
+        .FontName = "Webdings"
+        .FontBold = True
+        .fontsize = 14
+
+        .BackStyle = fmBackStyleTransparent
+        .BorderStyle = fmBorderStyleNone
+        .Caption = Chr(113)
+
+        .ForeColor = RGB(100, 100, 100)
+        .Left = 0
+        
+        .ControlTipText = "Zwiń/rozwiń drzewko"
+        .OnDblClick = INIT_STRING_EVENT
+        .OnMouseMove = INIT_STRING_EVENT
+    End With
+    
+End Sub
+
+Private Sub Form_Close()
+    Call ProceduraZamkniecia
+End Sub
+
+Private Sub InicjalizujDanePoczatkowe()
+    Call m_AddResizer
+    Call m_AddRolldown
+    
+   Me.EtyMResizer.Visible = False
+   Me.etyMRolldown.Visible = False
+    
+End Sub
+
+Private Sub SetTreeViewCaption()
+    Dim TreeViewCaption As String
+    
+    If Len(Trim(newTreeViewCaption)) = 0 Then
+        TreeViewCaption = Sur.tr("Wybierz z drzewa")
+    Else
+        TreeViewCaption = newTreeViewCaption
+    End If
+    
+    Me.Caption = TreeViewCaption
+    
+End Sub
+
+Private Sub ProceduraZamkniecia()
+    Call SetMousePointerDefault
+    fTreeView_ReturnID = wybraneID
+End Sub
+
+Private Sub frmResize_AfterResize()
+    VBA.MsgBox "Zmieniono rozmiar !"
+End Sub
+
+Private Sub Lst_DblClick(Cancel As Integer)
+    Call LstDblClick
+    
+    If wybraneID = 0 Then
+        Me.CmdFocus.SetFocus
+    Else
+        DoCmd.Close acForm, CurrentModeName
+    End If
+End Sub
+
+Private Sub m_objResizer_DblClick(Cancel As Integer)
+    Debug.Print "Maksymalizuj lub minimalizuj formularz (liste)"
+End Sub
+
+Private Sub m_objRolldown_DblClick(Cancel As Integer)
+    Debug.Print "Zwijanie lub rozwijanie listy"
+End Sub
+
+Private Sub LstDblClick()
+    Dim werLP As Long
+    Dim werPoz As Long
+    Dim werId As Long
+    Dim werParentId As Long
+    Dim werIlosc As Long
+    
+    Dim sPom As String
+    
+    Dim wer1Chr As String
+    Dim wer1ChrPos As Long
+    
+    Dim newRow As String
+
+      Const sfName = "LstDblClick"
+      Dim ErrNumber, ErrDescription
+On Error GoTo Err_PROCEDURE
+
+    werLP = Me.Lst.Column(0)
+    werPoz = Me.Lst.Column(1)
+    werId = Me.Lst.Column(2)        'IdPoziomu
+    werParentId = Me.Lst.Column(3)
+    If IsNumeric(Me.Lst.Column(4)) Then
+        werIlosc = Me.Lst.Column(4)
+    End If
+    
+    If werPoz < TreeLevels Then
+        wer1Chr = Left(Trim(Me.Lst.Column(5)), 1)
+        If Len(wer1Chr) > 0 Then
+            wer1ChrPos = InStr(1, Me.Lst.Column(5), wer1Chr)
+        End If
+    End If
+    
+    sPom = "Lp: " & werLP & ") Poziom " & werPoz & " , Id=" & werId & " , Ilosc=" & werIlosc
+    
+    Debug.Print sPom
+    
+    '--- rozwijamy ---
+    If wer1Chr = NodeNotEmpty And werPoz < TreeLevels Then
+        '-- rozsuwam kolejne pozycji (zwiekszam LP)
+        RstLst.MoveLast
+        While RstLst.Fields("Lp") > werLP
+            RstLst.Fields("Lp") = RstLst.Fields("Lp") + werIlosc
+            RstLst.MovePrevious
+        Wend
+
+        '-- modyfikuje klikany rekord (zmieniam OPIS)
+                 newRow = Space(wciecie ^ (werPoz - 1))
+        newRow = newRow & NodeExpanded & Mid(Me.Lst.Column(5), wer1ChrPos + 1)
+        RstLst.Fields("Opis") = newRow
+        RstLst.update
+        LstNodeExpandedCount = LstNodeExpandedCount + 1
+        LstNodeNotEmptyCount = LstNodeNotEmptyCount - 1
+        
+        '-- dodaje nowe rekordy (uzupelniam RST)
+        Call LstNodeExpand(werId, werLP, werPoz)
+        
+        '-- ustawiem kursor na klikniety rekord
+        RstLst.MoveFirst
+        Call RstLst.Find("Lp=" & werLP)
+        
+        
+    End If
+
+    '--- zwijamy ---
+    If wer1Chr = NodeExpanded And werPoz < TreeLevels Then
+       RstLst.MoveFirst
+       Call RstLst.Find("Lp=" & werLP)
+                 newRow = Space(wciecie ^ (werPoz - 1))
+        newRow = newRow & NodeNotEmpty & Mid(Me.Lst.Column(5), wer1ChrPos + 1)
+        RstLst.Fields("Opis") = newRow
+        RstLst.update
+        LstNodeExpandedCount = LstNodeExpandedCount - 1
+        LstNodeNotEmptyCount = LstNodeNotEmptyCount + 1
+        
+        RstLst.MoveNext
+        Call LstNodeCollapse(werLP, werPoz)
+        
+        RstLst.MoveFirst
+        Call RstLst.Find("Lp=" & werLP)
+        
+        Set Me.Lst.Recordset = RstLst
+        '---
+        
+    End If
+    
+    If werPoz = TreeLevels Then
+        Call RstLst.Find("Lp=" & werLP)
+        wybraneID = RstLst.Fields("IdPoziomu")
+    End If
+
+Exit_PROCEDURE:
+    Exit Sub
+
+Err_PROCEDURE:
+    ErrNumber = Err.Number
+    ErrDescription = Err.Description
+    Select Case ErrNumber
+'    Case NrBledu
+'        Debug.Print "(" & ErrNumber  & ") - " & CurrentModuleName & "." & sfName
+
+    Case Else
+        VBA.MsgBox "(" & ErrNumber & IIf(Erl = 0, "", "," & Erl) & ") " & _
+               "- " & CurrentModeName & "." & sfName & vbLf & _
+               ErrDescription, vbOKOnly + vbInformation, "Uwaga"
+    End Select
+    Resume Exit_PROCEDURE
+
+End Sub
+
+Private Sub LstNodeExpand(werId As Long, StartLP As Long, PrevLevel As Long)
+    Dim SqlWhere As String
+    Dim StartLevel As Long
+    
+    StartLevel = PrevLevel + 1
+    
+    Select Case PrevLevel
+    Case 1
+        SqlWhere = "IsNull(tOK.IdGrupyKont,0)=" & werId
+    Case 2
+        SqlWhere = "IsNull(tPK.IdObszaruKont,0)=" & werId
+    End Select
+    
+    
+    Call UzupelnijDaneListy(StartLevel, SqlWhere, StartLP)
+End Sub
+
+Private Sub LstNodeCollapse(werParentLp As Long, werParentPoz As Long)
+    Dim bCollaps As Boolean
+    Dim iLp As Long
+    
+    bCollaps = True
+    While Not RstLst.EOF
+        If RstLst.Fields("Poziom") <= werParentPoz And bCollaps Then
+            bCollaps = False
+        End If
+        
+        If bCollaps Then
+            If InStr(Nz(RstLst.Fields("Opis"), ""), NodeNotEmpty) > 0 Then
+                LstNodeNotEmptyCount = LstNodeNotEmptyCount - 1
+            End If
+            
+            If InStr(Nz(RstLst.Fields("Opis"), ""), NodeExpanded) > 0 Then
+                LstNodeExpandedCount = LstNodeExpandedCount - 1
+            End If
+            
+            RstLst.DELETE
+        Else
+            iLp = iLp + 1
+            RstLst.Fields("Lp") = werParentLp + iLp
+            RstLst.update
+        End If
+        
+        RstLst.MoveNext
+    Wend
+    
+End Sub
+
+Private Sub UzupelnijDaneListy(UpdateLevel As Long, Optional SqlWhereCondition As String = "", Optional StartLP As Long)
+    Dim newRow As String
+    Dim Rst As Recordset
+    Dim Sql As String
+         
+    Dim iLp As Long
+     
+    If Len(SqlWhereTag) > 0 Then
+        If Len(SqlWhereCondition) > 0 Then
+            SqlWhereCondition = "WHERE " & SqlWhereCondition
+        End If
+        Sql = Replace(ArraySql(UpdateLevel), SqlWhereTag, SqlWhereCondition)
+    End If
+     
+    iLp = StartLP
+    If openRst_FW_RO(Rst, Sql) Then '--- load ferst level  ---
+        Do While Not Rst.EOF
+            iLp = iLp + 1
+            
+            RstLst.AddNew
+                RstLst.Fields("Lp") = iLp                           '1
+                RstLst.Fields("Poziom") = UpdateLevel               '2
+                RstLst.Fields("IdPoziomu") = Rst.Fields(0)          '3
+                RstLst.Fields("ParentId") = Nz(Rst.Fields(1), -1)   '4
+                RstLst.Fields("Ilosc") = Rst.Fields(2)              '5
+                
+                newRow = Space(wciecie ^ (UpdateLevel - 1))
+                
+                If UpdateLevel < TreeLevels Then
+                    If RstLst.Fields("Ilosc") = 0 Then
+                        newRow = newRow & NodeEmpty
+                    Else
+                        newRow = newRow & NodeNotEmpty
+                        LstNodeNotEmptyCount = LstNodeNotEmptyCount + 1
+                    End If
+                End If
+                
+                newRow = newRow & "  " & Rst.Fields(3)
+                RstLst.Fields("Opis") = newRow                      '6
+                
+            RstLst.update
+            Rst.MoveNext
+
+        Loop
+        
+    End If
+    
+    Set Me.Lst.Recordset = RstLst
+    
+End Sub
+
+Private Sub UtworzPustyRST()
+    Dim pomName As String
+      Const sfName = "UtworzRST"
+      Dim ErrNumber, ErrDescription
+On Error GoTo Err_SUB
+    
+    If Not CurrentProject.IsConnected Then Exit Sub
+    
+    If Not RstLst Is Nothing Then Set RstLst = Nothing
+    Set RstLst = New ADODB.Recordset
+        
+    With RstLst
+    '--- 1
+        pomName = "Lp"
+        .Fields.Append pomName, 5, 8, 120
+        .Fields(pomName).Precision = 15
+        .Fields(pomName).NumericScale = 255
+    '--- 2
+        pomName = "Poziom"
+        .Fields.Append pomName, 5, 8, 120
+        .Fields(pomName).Precision = 15
+        .Fields(pomName).NumericScale = 255
+    '--- 3
+        pomName = "IdPoziomu"
+        .Fields.Append pomName, 3, 4, 120
+        .Fields(pomName).Precision = 10
+        .Fields(pomName).NumericScale = 255
+    '--- 4
+        pomName = "ParentId"
+        .Fields.Append pomName, 3, 4, 120
+        .Fields(pomName).Precision = 10
+        .Fields(pomName).NumericScale = 255
+    '--- 5
+        pomName = "Ilosc"
+        .Fields.Append pomName, 3, 4, 120
+        .Fields(pomName).Precision = 10
+        .Fields(pomName).NumericScale = 255
+    '--- 6
+        pomName = "Opis"
+        .Fields.Append pomName, 200, 4000, 104
+        .Fields(pomName).Precision = 255
+        .Fields(pomName).NumericScale = 255
+        
+    '--- must by !!! ---
+        .CursorLocation = adUseServer
+        .LockType = adLockOptimistic
+    '--------------------------------------------------------------------------------
+        .Open
+        .Sort = "Lp"
+    End With
+
+Exit_SUB:
+    Exit Sub
+
+Err_SUB:
+    ErrNumber = Err.Number
+    ErrDescription = Err.Description
+    Select Case ErrNumber
+'    Case NrBledu
+'        Debug.Print "(" & ErrNumber  & ") - " & CurrentModName & "." & sfName
+
+    Case Else
+        VBA.MsgBox "(" & ErrNumber & IIf(Erl = 0, "", "," & Erl) & ") " & _
+               "- " & CurrentModeName & "." & sfName & vbLf & _
+               ErrDescription, vbOKOnly + vbInformation, "Uwaga"
+    End Select
+    Resume Exit_SUB
+
+End Sub
