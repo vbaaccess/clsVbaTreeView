@@ -13,7 +13,7 @@ Public Enum vbaTreeViewWybor
     PlanuKont = 5
 End Enum
 
-Private Type TreeViewProperty
+Public Type TreeViewProperty
   FormCaption As String
   WhereTag As String
   ArrraySql() As Variant
