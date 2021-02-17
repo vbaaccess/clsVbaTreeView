@@ -1,5 +1,5 @@
 '--------------------------- --------------------------- ---------------------------
-' Module  : clsTreeView
+' Module  : clsTreeViewMain
 ' Author  : paweld
 ' Date    : 2019-09-11
 ' Purpose : Universal form tree view, without ActiveX or other external controls
@@ -8,11 +8,12 @@
 ' Changes :
 '--------------------------- --------------------------- ---------------------------
 ' 2019-09-11 , PD : Create
+' 2021-01-28 , PD : Refaktoring; modification of the management class
 '--------------------------- --------------------------- ---------------------------
 Option Compare Database
 Option Explicit
 
-Private Const CurrentModName = "clsTreeView"
+Private Const CurrentModName = "clsTreeViewMain"
 Private Const TreeViewFormName = "frmTreeView"
 
 Private objHandle                                               ' object handle
