@@ -1,6 +1,6 @@
 Version =20
 VersionRequired =20
-Checksum =-1708645126
+Checksum =437250169
 Begin Form
     Modal = NotDefault
     RecordSelectors = NotDefault
@@ -22,10 +22,10 @@ Begin Form
     Width =10110
     DatasheetFontHeight =10
     ItemSuffix =10
-    Left =1035
-    Top =165
-    Right =11145
-    Bottom =5520
+    Left =6060
+    Top =570
+    Right =16170
+    Bottom =5925
     DatasheetGridlinesColor =12632256
     MaxRecords =900000
     RecSrcDt = Begin
@@ -41,25 +41,20 @@ Begin Form
     End
     PrtDevMode = Begin
         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-        0x010403009c003403039f00000100090000000000000001000700580201000100 ,
-        0x5802000000000000000000000000000000000000000000000000000000000000 ,
-        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-        0x000000000000000000000000000000000000000000000000000000005344444d ,
-        0x00060000000600004850204c617365724a657420313032300000000000000000 ,
+        0x010400069c005403039f0000010009009a0b3408640001000700580201000100 ,
+        0x2c01020000004134000000000000000000000000000000000000000000000000 ,
         0x0000000000000000000000000000000000000000010000000000000001000000 ,
-        0x0000000000000000010000000900000009000000090000000900000009000000 ,
-        0x0900000009000000090000000900000009000000090000000900000009000000 ,
-        0x090000000900000009000000090000000000000001000000010000001a040000 ,
-        0x0000000000000000000000000f0000005a000000000000000000000001000000 ,
-        0x000000000000000080808000ff000000ffff000000ff000000ffff000000ff00 ,
-        0xff00ff0000000000000000000000000000000000280000006400000000000000 ,
+        0x0200000001000000000000000000000000000000000000000000000050524956 ,
+        0xe210000000000000000000000000000000000000000000000000000000000000 ,
         0x0000000000000000000000000000000000000000000000000000000000000000 ,
-        0x00000000000000000000000000000000de030000de0300000000000000000000 ,
-        0x0080000000000000000000000100000000000000000000000000000000000000 ,
-        0x000000000000000000000000418cf25f34030000000000000000000000800000 ,
-        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-        0x0000000000000000000000000000000000000000000000000000000000000000 ,
-        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000180000000000102710271027 ,
+        0x0000102700000000000000008000540300000000000000000000000000000000 ,
+        0x00000000000000000200000000000000000010005c4b03006843040000000000 ,
+        0x0000000001000100000000000000000000000000000000002f1fd10b03000000 ,
+        0x09000b00ff000000000000000000000000000000000000000000ff00ff000000 ,
+        0x0000000000000000000000000000000000000100000000000000000000000000 ,
+        0x0000000000000000000000001c00000000000000020002000000020002000200 ,
+        0x0200020002000200020002000000000000000000000000000000000000000000 ,
         0x0000000000000000000000000000000000000000000000000000000000000000 ,
         0x0000000000000000000000000000000000000000000000000000000000000000 ,
         0x0000000000000000000000000000000000000000000000000000000000000000 ,
@@ -70,12 +65,17 @@ Begin Form
         0x0000000000000000000000000000000000000000000000000000000000000000 ,
         0x0000000000000000000000000000000000000000000000000000000000000000 ,
         0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0100000000000000000000000000000080000000534d544a0000000010007000 ,
+        0x420075006c006c007a0069007000200050004400460020005000720069006e00 ,
+        0x74006500720000005265736f6c7574696f6e0033303064706900506167655369 ,
+        0x7a650041340050616765526567696f6e00000000000000000000000000000000 ,
         0x00000000000000000000000000000000
     End
     PrtDevNames = Begin
-        0x080019003b000100000000000000000000000000000000000000000000000000 ,
-        0x0000000000000000000000000000000000000000000000000000005553423030 ,
-        0x3100
+        0x08001c0030000100000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000042554c4c5a495000
     End
     OnLoad ="[Event Procedure]"
     Begin
@@ -114,7 +114,7 @@ Begin Form
         Begin Section
             CanGrow = NotDefault
             Height =5370
-            Name ="Szczegóły"
+            Name ="Szczeg�y"
             OnMouseMove ="[Event Procedure]"
             GUID = Begin
                 0xabb3c25313df954b80481265345d327d
@@ -135,7 +135,7 @@ Begin Form
                 Begin ListBox
                     TabStop = NotDefault
                     SpecialEffect =0
-                    OverlapFlags =87
+                    OverlapFlags =85
                     OldBorderStyle =0
                     IMESentenceMode =3
                     ColumnCount =6
@@ -148,17 +148,18 @@ Begin Form
                     Name ="Lst"
                     RowSourceType ="Table/View/StoredProc"
                     ColumnWidths ="0;0;0;0;0"
-                    StatusBarText ="Dwuklik rozwija zagnieżdżoną listę."
+                    StatusBarText ="Dwuklik rozwija zagnie�d�on� list�."
                     OnDblClick ="[Event Procedure]"
                     Tag ="GrowX GrowY"
-                    ControlTipText ="Dwuklik rozwija zagnieżdżoną listę."
+                    ControlTipText ="Dwuklik rozwija zagnie�d�on� list�."
                     GUID = Begin
                         0xedc3ce204536974e936066e3800e0cca
                     End
                 End
                 Begin Label
+                    Visible = NotDefault
                     OverlapFlags =85
-                    Left =9780
+                    Left =9767
                     Top =5070
                     Width =330
                     Height =300
@@ -171,6 +172,7 @@ Begin Form
                     End
                 End
                 Begin Label
+                    Visible = NotDefault
                     OverlapFlags =85
                     Top =5070
                     Width =345
@@ -184,11 +186,10 @@ Begin Form
                     End
                 End
                 Begin CommandButton
-                    Visible = NotDefault
-                    OverlapFlags =93
+                    OverlapFlags =85
                     AccessKey =84
                     Left =510
-                    Top =5045
+                    Top =5070
                     Width =634
                     Height =227
                     FontSize =6
@@ -205,10 +206,10 @@ Begin Form
                 End
                 Begin CommandButton
                     Visible = NotDefault
-                    OverlapFlags =93
+                    OverlapFlags =85
                     AccessKey =84
                     Left =1360
-                    Top =5045
+                    Top =5070
                     Width =784
                     Height =227
                     FontSize =6
@@ -221,6 +222,36 @@ Begin Form
                         0xb0bcf3b5c59f444ea077ef3b95624058
                     End
                     UnicodeAccessKey =84
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =2835
+                    Top =5070
+                    Width =442
+                    Height =287
+                    FontSize =7
+                    TabIndex =4
+                    Name ="CmdMaksymalizujFormularz"
+                    Caption ="MAX - (maksymalizuj)"
+                    GUID = Begin
+                        0x2c52fb91b72ce041bdb4a424e9528d6d
+                    End
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =2325
+                    Top =5070
+                    Width =442
+                    Height =287
+                    FontSize =7
+                    TabIndex =5
+                    Name ="CmdMinimalizujFormularz"
+                    Caption ="MIN - (minimalizuj)"
+                    GUID = Begin
+                        0x7d00f02d5461964aa9a93efa169b7cdb
+                    End
                 End
             End
         End
@@ -235,20 +266,27 @@ Option Compare Database
 Option Explicit
 
 Private Const INIT_STRING_EVENT = "[Event Procedure]"
+'Private bTranslate As Boolean 'TO DO - wyodrebnic na potrzeby gita
+
+Private Const DefaultFormCaption = "Wybierz z drzewa"
+Private Const DefaultWhereTag = "/*{{WHERE}}*/"
+Private Const DefaultSql = "SELECT 0 AS [Id],NULL AS [ParentId], 0 AS [Ilosc], '-BRAK DANYCH-' AS [Opis]"
+
+Private objTreeView As clsTreeViewWithEvent
 
 Private Const CurrentModeName = "frmTreeView"
-Private newTreeViewCaption As String
+'''''''''Private newTreeViewCaption As String
 Private newLstSql() As String
-Private SqlWhereTag As String
+'''''''''Private SqlWhereTag As String
 
 '--- na potrzeby listy --- --- --- --- --- ---
 Const NodeNotEmpty = "+"
-Const NodeEmpty = "±"   'Chr(177)
-Const NodeExpanded = "¬"   '"·"  '"O" '"~"  '"×" '"•"      '»187
+Const NodeEmpty = "�"                                      'Chr(177)
+Const NodeExpanded = "�"   '"�"  '"O" '"~"  '"�" '"�"      '�187
 
 Const wciecie = 5
 '--- ----------------- --- --- --- --- --- ---
-Dim ArrData
+''''Dim ArrData
 Dim ArraySql() As String
 '--- ----------------- --- --- --- --- --- ---
 Private RstLst As Recordset
@@ -263,19 +301,29 @@ Private Const LstCollapsed = 0
 Private Const LstPartiallyExpanded = 1
 Private Const LstAllExpanded = 2
 
-Private wybraneID As Long
+Private WybraneID As Long
 Private TreeLevels As Long
 
-'--- rolldown - colaps/expand ---
-Private WithEvents m_objRolldown As Label
-Attribute m_objRolldown.VB_VarHelpID = -1
+' TO DO - Debug.Print "Zwijanie lub rozwijanie listy"
+'    If Screen.MousePointer = 0 Then
+'        Call MouseCursor(IDC_HAND)
+'    End If
 
-'--- Resizer ---
-Private WithEvents m_objResizer As Label
-Attribute m_objResizer.VB_VarHelpID = -1
+Private Sub cmdTest_Click()
+    
+    Call DebugPrintListData
+Exit Sub
 
-Private WithEvents frmResize As clsFormResize
-Attribute frmResize.VB_VarHelpID = -1
+    Debug.Print "LstNodeNotEmptyCount => " & LstNodeNotEmptyCount
+    Debug.Print "LstNodeExpandedCount => " & LstNodeExpandedCount
+
+Exit Sub
+
+    Call DebugPrintListData
+
+    Call SetColumnWidths
+    Me.CmdFocus.SetFocus
+End Sub
 
 Private Sub DebugPrintListData()
     Dim rstRow As String
@@ -295,209 +343,208 @@ Private Sub DebugPrintListData()
 End Sub
 
 Private Sub SetColumnWidths()
+   'If Not IsNull(Me.Lst) Then i = Me.Lst
+   
+   'Me.Lst.ColumnWidths = "1cm;1cm;1cm;1cm;;2.5cm"
+   '                        1   2   3   4  5  6
     Me.Lst.ColumnWidths = "0cm;0cm;0cm;0cm;;0cm"
+   '1 - Liczba porzadkowa na liscie
+   '2 - Poziom
+   '3 - [IdPoziomu]
+   '4 - [ParentId]
+   '5 - [Ilosc]     pozycji w podkategori
+   '6 - [Opis]      Wyswietlane pole
 End Sub
 
-Private Function OpenArrRst(ArraySql As Variant)
-    Dim Sql As String
-    Dim RstSql As Recordset
-    
-    Dim RstLp As Single
-    
-    Sql = Join(ArraySql, ";")
-    RstMax = 0
-    
-    If OpenRst(RstSql, Sql) Then
-        RstLp = 1
-        ReDim Rst(1 To RstLp) As Recordset
-        Set Rst(RstLp) = RstSql
-        
-        Do
-            Set RstSql = RstSql.NextRecordset()
-            If Not RstSql Is Nothing Then
-                RstLp = RstLp + 1
-                ReDim Preserve Rst(1 To RstLp) As Recordset
-                Set Rst(RstLp) = RstSql
-            Else
-                RstMax = RstLp
-            End If
-            
-        Loop Until RstMax > 0
-        
-    End If
-
-End Function
-
 Private Sub Form_Open(Cancel As Integer)
-    '--- 1 ---
-    fTreeView_ReturnID = 0
+    '--- 1 ----
     
     If IsNull(Me.OpenArgs) Then
-        Dim sNaglowek As String
-        Dim sSql As String
-        Dim sWhereTag As String
-        
-        sNaglowek = "Wybierz z drzewa"
-        sSql = "SELECT 0 AS [Id],NULL AS [ParentId], 0 AS [Ilosc], '-BRAK DANYCH-' AS [Opis]"
-        sWhereTag = "/*{{WHERE}}*/"
-        ArrData = Array(sNaglowek, sWhereTag, sSql)
+        '''''' ArrData = Array(DefaultFormCaption, DefaultWhereTag, DefaultSql)
     Else
-        ArrData = Split(Me.OpenArgs, ";")
-    End If
+       'Debug.Print Me.OpenArgs
+        Set objTreeView = PtrToObject(Me.OpenArgs)
+        objTreeView.ReturnID = 0
         
+        Debug.Print objTreeView.FormCaption     'TO DO
+        Debug.Print objTreeView.FormWhereTag    'TO DO
+    End If
+    
     Call INIT_Data
     Call UtworzPustyRST
     Call UzupelnijDaneListy(1)
+    
+Exit Sub
+''''    '--- 1 ---
+''''
+''''    If IsNull(Me.OpenArgs) Then
+''''        ''''Dim sNaglowek As String
+''''        ''''Dim sWhereTag As String
+''''        '''Dim sSql As String
+''''
+''''
+''''        ''''sNaglowek = "Wybierz z drzewa"
+''''        '''sWhereTag = "/*{{WHERE}}*/"
+''''        ''''sSql = "SELECT 0 AS [Id],NULL AS [ParentId], 0 AS [Ilosc], '-BRAK DANYCH-' AS [Opis]"
+''''        ArrData = Array(sNaglowek, sWhereTag, sSql)
+''''    Else
+''''        ArrData = Split(Me.OpenArgs, ";")
+''''    End If
+''''
+''''    Call INIT_Data
+''''    Call UtworzPustyRST
+''''    Call UzupelnijDaneListy(1)
 End Sub
 
 Private Sub INIT_Data()
-    TreeLevels = UBound(ArrData) - 2 + 1
-
-    Dim sNaglowek As String
-    Dim vRow
-    Dim iPoz As Single
+    'jesli nie przekazan SQL ek to korzystamy z defaultsql
+    Dim objTreeViewProperty As New clsTreeViewProperty
+    Dim iLp As Long
+    Dim vSql
     
+    Set objTreeViewProperty = objTreeView.Property
+    
+   'TreeLevels = UBound(Array(objTreeViewProperty.ArrraySql)) - 2 + 1
+   
+''''''    TreeLevels = 3
+''''''
+''''''    ReDim ArraySql(1 To TreeLevels)
+''''''
+''''''    For iLp = 1 To TreeLevels
+''''''        ArraySql(iLp) = objTreeViewProperty.ArrraySql(iLp)
+''''''    Next iLp
+    
+    TreeLevels = UBound(objTreeViewProperty.AllSql()) + 1
     ReDim ArraySql(1 To TreeLevels)
     
-    For Each vRow In ArrData
-        If Len(sNaglowek) = 0 Then
-           'sNaglowek = ArrData(0)
-            sNaglowek = vRow
-        Else
-            If Len(SqlWhereTag) = 0 Then
-               'sNaglowek = ArrData(1)
-                SqlWhereTag = vRow
-            Else
-                iPoz = iPoz + 1
-                ArraySql(iPoz) = vRow
-               'ReDim Preserve ArraySql(1 To iPoz)
-            End If
-        End If
+    For Each vSql In objTreeViewProperty.AllSql()
+        iLp = iLp + 1
+        ArraySql(iLp) = vSql
+       'Debug.Print vSql
+    Next vSql
+    
+Exit Sub
+    
+    Debug.Print objTreeViewProperty.ArrraySql(0)
+    
+    Dim varTV As Object
+    Dim bBrakObiektu As Boolean
+    
+    If objTreeView Is Nothing Then
+        bBrakObiektu = True
+    Else
+        Set varTV = objTreeView.Property
         
-    Next vRow
+        If IsNull(varTV) Then
+            bBrakObiektu = True
+        Else
+            '''''ReDim Preserve ArraySql(1 To TUTAJ ILOSC POZIOMOW)
+            
+            'Dim TreeViewProperty As vbaTreeViewProperty
+            'TreeViewProperty = varTV
+            'ArraySql = TreeViewProperty.ArrraySql
+            
+'''''            ArraySql = varTV.ArrraySql()
+            Dim vRowWithSql
+            Dim iLpSql As Single
+            
+           'For Each vRowWithSql In varTV
+            For Each vRowWithSql In varTV
+                iLpSql = iLpSql + 1
+                ArraySql(iLpSql) = vRowWithSql
+            Next vRowWithSql
+        End If
+    
+    End If
+    
+    If bBrakObiektu Then
+        'ReDim Preserve ArraySql(1 To 1)
+         ReDim ArraySql(1 To 1)
+         ArraySql(1) = DefaultSql
+    End If
+    
+Exit Sub
+    
+    'TO DO - 1 - sprawdzami ile jest przekaznych SQL'ek
+    'TO DO - 2 - ladujemy SQl do ArraySql
+    
+''''''    TreeLevels = UBound(ArrData) - 2 + 1
+''''''
+''''''    Dim sNaglowek As String
+''''''    Dim vRow
+''''''    Dim iPoz As Single
+''''''
+''''''    ReDim ArraySql(1 To TreeLevels)
+''''''
+''''''    For Each vRow In ArrData
+''''''        If Len(sNaglowek) = 0 Then
+''''''           'sNaglowek = ArrData(0)
+''''''            sNaglowek = vRow
+''''''        Else
+'''''''''''            If Len(SqlWhereTag) = 0 Then
+'''''''''''               'sNaglowek = ArrData(1)
+'''''''''''                SqlWhereTag = vRow
+'''''''''''            Else
+''''''                iPoz = iPoz + 1
+''''''                ArraySql(iPoz) = vRow
+''''''               'ReDim Preserve ArraySql(1 To iPoz)
+'''''''''            End If
+''''''        End If
+''''''
+''''''    Next vRow
 
-    If Len(sNaglowek) > 0 Then newTreeViewCaption = sNaglowek
+    ''''''''''''If Len(sNaglowek) > 0 Then newTreeViewCaption = sNaglowek
     
 End Sub
 
 Private Sub Form_Load()
     '--- 2 ---
-    'SprawdzUprawnienia Me
-    'selectLang Me, "PL"
-    
-    Set frmResize = New clsFormResize
-    frmResize.INIT Me.Form
-    
     Call SetTreeViewCaption
     
-    Call InicjalizujDanePoczatkowe
-    
     Me.CmdFocus.SetFocus
-End Sub
-
-Private Sub m_AddResizer()
-'
-' add resizing control to bottom righthand corner of userform
-'
-    Set m_objResizer = Me.EtyMResizer
-    
-    With m_objResizer
-        .FontName = "Marlett"
-        .FontBold = True
-        .fontsize = 14
-        
-        .BackStyle = fmBackStyleTransparent
-        .BorderStyle = fmBorderStyleNone
-        .Caption = "o"
-        .ForeColor = RGB(100, 100, 100)
-        .Top = Me.InsideHeight - .Height
-        .Left = Me.InsideWidth - .Width
-        
-        .ControlTipText = "Zmiana rozmiaru listy"   ' Maksymalizuj lub minimalizuj liste
-        .OnDblClick = INIT_STRING_EVENT
-    End With
-    
-End Sub
-
-Private Sub m_AddRolldown()
-'
-' add resizing control to bottom righthand corner of userform
-'
-    Set m_objRolldown = Me.etyMRolldown
-    With m_objRolldown
-        .FontName = "Webdings"
-        .FontBold = True
-        .fontsize = 14
-
-        .BackStyle = fmBackStyleTransparent
-        .BorderStyle = fmBorderStyleNone
-        .Caption = Chr(113)
-
-        .ForeColor = RGB(100, 100, 100)
-        .Left = 0
-        
-        .ControlTipText = "Zwiń/rozwiń drzewko"
-        .OnDblClick = INIT_STRING_EVENT
-        .OnMouseMove = INIT_STRING_EVENT
-    End With
-    
 End Sub
 
 Private Sub Form_Close()
     Call ProceduraZamkniecia
 End Sub
 
-Private Sub InicjalizujDanePoczatkowe()
-    Call m_AddResizer
-    Call m_AddRolldown
+Private Sub SetTreeViewCaption(Optional bTranslate As Boolean = True)
+    Dim sFormCaption$
     
-   Me.EtyMResizer.Visible = False
-   Me.etyMRolldown.Visible = False
-    
-End Sub
-
-Private Sub SetTreeViewCaption()
-    Dim TreeViewCaption As String
-    
-    If Len(Trim(newTreeViewCaption)) = 0 Then
-        TreeViewCaption = Sur.tr("Wybierz z drzewa")
-    Else
-        TreeViewCaption = newTreeViewCaption
+    If Not objTreeView Is Nothing Then
+        sFormCaption = objTreeView.FormCaption
     End If
     
-    Me.Caption = TreeViewCaption
+    If Len(Trim(sFormCaption)) = 0 Then
+        sFormCaption = DefaultFormCaption
+    End If
+    
+    If bTranslate Then
+        sFormCaption = Sur.tr(sFormCaption)
+    End If
+    
+    Me.Caption = sFormCaption
     
 End Sub
 
 Private Sub ProceduraZamkniecia()
+On Error Resume Next
     Call SetMousePointerDefault
-    fTreeView_ReturnID = wybraneID
-End Sub
-
-Private Sub frmResize_AfterResize()
-    VBA.MsgBox "Zmieniono rozmiar !"
+    objTreeView.ReturnID = WybraneID
 End Sub
 
 Private Sub Lst_DblClick(Cancel As Integer)
     Call LstDblClick
     
-    If wybraneID = 0 Then
+    If WybraneID = 0 Then
         Me.CmdFocus.SetFocus
     Else
         DoCmd.Close acForm, CurrentModeName
     End If
 End Sub
 
-Private Sub m_objResizer_DblClick(Cancel As Integer)
-    Debug.Print "Maksymalizuj lub minimalizuj formularz (liste)"
-End Sub
-
-Private Sub m_objRolldown_DblClick(Cancel As Integer)
-    Debug.Print "Zwijanie lub rozwijanie listy"
-End Sub
-
 Private Sub LstDblClick()
-    Dim werLP As Long
+    Dim werLp As Long
     Dim werPoz As Long
     Dim werId As Long
     Dim werParentId As Long
@@ -514,7 +561,7 @@ Private Sub LstDblClick()
       Dim ErrNumber, ErrDescription
 On Error GoTo Err_PROCEDURE
 
-    werLP = Me.Lst.Column(0)
+    werLp = Me.Lst.Column(0)
     werPoz = Me.Lst.Column(1)
     werId = Me.Lst.Column(2)        'IdPoziomu
     werParentId = Me.Lst.Column(3)
@@ -529,7 +576,7 @@ On Error GoTo Err_PROCEDURE
         End If
     End If
     
-    sPom = "Lp: " & werLP & ") Poziom " & werPoz & " , Id=" & werId & " , Ilosc=" & werIlosc
+    sPom = "Lp: " & werLp & ") Poziom " & werPoz & " , Id=" & werId & " , Ilosc=" & werIlosc
     
     Debug.Print sPom
     
@@ -537,7 +584,7 @@ On Error GoTo Err_PROCEDURE
     If wer1Chr = NodeNotEmpty And werPoz < TreeLevels Then
         '-- rozsuwam kolejne pozycji (zwiekszam LP)
         RstLst.MoveLast
-        While RstLst.Fields("Lp") > werLP
+        While RstLst.Fields("Lp") > werLp
             RstLst.Fields("Lp") = RstLst.Fields("Lp") + werIlosc
             RstLst.MovePrevious
         Wend
@@ -546,16 +593,16 @@ On Error GoTo Err_PROCEDURE
                  newRow = Space(wciecie ^ (werPoz - 1))
         newRow = newRow & NodeExpanded & Mid(Me.Lst.Column(5), wer1ChrPos + 1)
         RstLst.Fields("Opis") = newRow
-        RstLst.update
+        RstLst.Update
         LstNodeExpandedCount = LstNodeExpandedCount + 1
         LstNodeNotEmptyCount = LstNodeNotEmptyCount - 1
         
         '-- dodaje nowe rekordy (uzupelniam RST)
-        Call LstNodeExpand(werId, werLP, werPoz)
+        Call LstNodeExpand(werId, werLp, werPoz)
         
         '-- ustawiem kursor na klikniety rekord
         RstLst.MoveFirst
-        Call RstLst.Find("Lp=" & werLP)
+        Call RstLst.Find("Lp=" & werLp)
         
         
     End If
@@ -563,19 +610,19 @@ On Error GoTo Err_PROCEDURE
     '--- zwijamy ---
     If wer1Chr = NodeExpanded And werPoz < TreeLevels Then
        RstLst.MoveFirst
-       Call RstLst.Find("Lp=" & werLP)
+       Call RstLst.Find("Lp=" & werLp)
                  newRow = Space(wciecie ^ (werPoz - 1))
         newRow = newRow & NodeNotEmpty & Mid(Me.Lst.Column(5), wer1ChrPos + 1)
         RstLst.Fields("Opis") = newRow
-        RstLst.update
+        RstLst.Update
         LstNodeExpandedCount = LstNodeExpandedCount - 1
         LstNodeNotEmptyCount = LstNodeNotEmptyCount + 1
         
         RstLst.MoveNext
-        Call LstNodeCollapse(werLP, werPoz)
+        Call LstNodeCollapse(werLp, werPoz)
         
         RstLst.MoveFirst
-        Call RstLst.Find("Lp=" & werLP)
+        Call RstLst.Find("Lp=" & werLp)
         
         Set Me.Lst.Recordset = RstLst
         '---
@@ -583,8 +630,8 @@ On Error GoTo Err_PROCEDURE
     End If
     
     If werPoz = TreeLevels Then
-        Call RstLst.Find("Lp=" & werLP)
-        wybraneID = RstLst.Fields("IdPoziomu")
+        Call RstLst.Find("Lp=" & werLp)
+        WybraneID = RstLst.Fields("IdPoziomu")
     End If
 
 Exit_PROCEDURE:
@@ -598,11 +645,14 @@ Err_PROCEDURE:
 '        Debug.Print "(" & ErrNumber  & ") - " & CurrentModuleName & "." & sfName
 
     Case Else
+        Call DopiszDoLogow("(" & ErrNumber & IIf(Erl = 0, "", "," & Erl) & _
+               ") - " & CurrentModeName & "." & sfName & " - " & ErrDescription)
         VBA.MsgBox "(" & ErrNumber & IIf(Erl = 0, "", "," & Erl) & ") " & _
                "- " & CurrentModeName & "." & sfName & vbLf & _
                ErrDescription, vbOKOnly + vbInformation, "Uwaga"
     End Select
     Resume Exit_PROCEDURE
+    Resume
 
 End Sub
 
@@ -623,6 +673,7 @@ Private Sub LstNodeExpand(werId As Long, StartLP As Long, PrevLevel As Long)
     Call UzupelnijDaneListy(StartLevel, SqlWhere, StartLP)
 End Sub
 
+'Private Sub LstNodeCollapse(werParentLp As Long, werParentId As Long)
 Private Sub LstNodeCollapse(werParentLp As Long, werParentPoz As Long)
     Dim bCollaps As Boolean
     Dim iLp As Long
@@ -646,7 +697,7 @@ Private Sub LstNodeCollapse(werParentLp As Long, werParentPoz As Long)
         Else
             iLp = iLp + 1
             RstLst.Fields("Lp") = werParentLp + iLp
-            RstLst.update
+            RstLst.Update
         End If
         
         RstLst.MoveNext
@@ -655,21 +706,33 @@ Private Sub LstNodeCollapse(werParentLp As Long, werParentPoz As Long)
 End Sub
 
 Private Sub UzupelnijDaneListy(UpdateLevel As Long, Optional SqlWhereCondition As String = "", Optional StartLP As Long)
+    Dim SqlWhereTag As String
+    
     Dim newRow As String
     Dim Rst As Recordset
     Dim Sql As String
          
     Dim iLp As Long
-     
-    If Len(SqlWhereTag) > 0 Then
-        If Len(SqlWhereCondition) > 0 Then
-            SqlWhereCondition = "WHERE " & SqlWhereCondition
-        End If
-        Sql = Replace(ArraySql(UpdateLevel), SqlWhereTag, SqlWhereCondition)
+    
+    '--- set Where Tag --- --- --- --- --- ---
+    If Not objTreeView Is Nothing Then
+        SqlWhereTag = objTreeView.FormWhereTag
     End If
+    
+    If Len(SqlWhereTag) = 0 Then
+        SqlWhereTag = DefaultWhereTag
+    End If
+    '--- ------------- --- --- --- --- --- ---
+     
+    If Len(SqlWhereCondition) > 0 Then
+        SqlWhereCondition = "WHERE " & SqlWhereCondition
+    End If
+    Sql = Replace(ArraySql(UpdateLevel), SqlWhereTag, SqlWhereCondition)
      
     iLp = StartLP
-    If openRst_FW_RO(Rst, Sql) Then '--- load ferst level  ---
+    
+    If Len(Trim(Sql)) > 0 Then
+    If openRst_FW_RO(Rst, Sql) Then '--- ladujemy pierwszy poziom ---
         Do While Not Rst.EOF
             iLp = iLp + 1
             
@@ -694,11 +757,12 @@ Private Sub UzupelnijDaneListy(UpdateLevel As Long, Optional SqlWhereCondition A
                 newRow = newRow & "  " & Rst.Fields(3)
                 RstLst.Fields("Opis") = newRow                      '6
                 
-            RstLst.update
+            RstLst.Update
             Rst.MoveNext
 
         Loop
         
+    End If
     End If
     
     Set Me.Lst.Recordset = RstLst
@@ -715,6 +779,7 @@ On Error GoTo Err_SUB
     
     If Not RstLst Is Nothing Then Set RstLst = Nothing
     Set RstLst = New ADODB.Recordset
+        '-- Dodaj;LP;Ilosc;NrZlecenia;Obiekt;Pracownik;PozycjaBudzetowa;PozycjaPlanuKont"
         
     With RstLst
     '--- 1
@@ -748,10 +813,13 @@ On Error GoTo Err_SUB
         .Fields(pomName).Precision = 255
         .Fields(pomName).NumericScale = 255
         
-    '--- must by !!! ---
+    '--- bez dwoch linijek ponizej, rst nie bedzie widoczny na obiekcie Listy !!! ---
+        '.CursorType = adOpenUnspecified
+        '.CursorType = adOpenDynamic
         .CursorLocation = adUseServer
         .LockType = adLockOptimistic
     '--------------------------------------------------------------------------------
+        '.Sort = "Lp Desc"              - TODO - ZWERYFIKOWA� O CO CHODZI ??? JAK JEST W��CZONA TA OPCJA TO CZASAMI NIE MOZNA POXNIEJ OTOWRZY RST ???
         .Open
         .Sort = "Lp"
     End With
@@ -767,10 +835,23 @@ Err_SUB:
 '        Debug.Print "(" & ErrNumber  & ") - " & CurrentModName & "." & sfName
 
     Case Else
+        Call DopiszDoLogow("(" & ErrNumber & IIf(Erl = 0, "", "," & Erl) & _
+               ") - " & CurrentModeName & "." & sfName & " - " & ErrDescription)
         VBA.MsgBox "(" & ErrNumber & IIf(Erl = 0, "", "," & Erl) & ") " & _
                "- " & CurrentModeName & "." & sfName & vbLf & _
                ErrDescription, vbOKOnly + vbInformation, "Uwaga"
     End Select
     Resume Exit_SUB
+    Resume
 
+End Sub
+
+Private Sub Szczeg�y_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+    Call SetMousePointerDefault
+End Sub
+
+Private Sub SetMousePointerDefault()
+    If Screen.MousePointer <> 0 Then
+        Screen.MousePointer = 0
+    End If
 End Sub

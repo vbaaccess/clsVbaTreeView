@@ -5,15 +5,11 @@ Private Const CurrentModName = "modTreeView"
 
 Public TreeView As New clsTreeViewMain
 
-Public Enum vbaTreeViewWybor
-    LokacjiZakladu = 1
-    LokacjiWydzial = 2
-    LokacjiRejonu = 3
-    Maszyny = 4
-    PlanuKont = 5
+Public Enum vbaTreeViewDefinitionEnum
+    Sample = 1
 End Enum
 
-Public Type TreeViewProperty
+Public Type vbaTreeViewProperty
   FormCaption As String
   WhereTag As String
   ArrraySql() As Variant
