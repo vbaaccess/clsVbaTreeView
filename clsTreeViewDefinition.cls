@@ -41,8 +41,8 @@ End Property
 Public Function InitDefinition(DefinitioTreeView As vbaTreeViewDefinitionEnum) As Boolean
     
     Select Case DefinitioTreeView
-    Case vbaTreeViewDefinitionEnum.PlanuKont
-        Call InitTreeView_PlanKont(DefinitioTreeView)
+    Case vbaTreeViewDefinitionEnum.Sample
+        Call InitTreeView_Sample(DefinitioTreeView)
     Case Else
         Debug.Print "DEFINITION UNDER CONSTRUCTION  !"
     End Select
