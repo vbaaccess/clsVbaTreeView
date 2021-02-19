@@ -1,6 +1,6 @@
 Version =20
 VersionRequired =20
-Checksum =437250169
+Checksum =-1313399829
 Begin Form
     Modal = NotDefault
     RecordSelectors = NotDefault
@@ -23,9 +23,9 @@ Begin Form
     DatasheetFontHeight =10
     ItemSuffix =10
     Left =6060
-    Top =570
+    Top =180
     Right =16170
-    Bottom =5925
+    Bottom =5535
     DatasheetGridlinesColor =12632256
     MaxRecords =900000
     RecSrcDt = Begin
@@ -186,6 +186,7 @@ Begin Form
                     End
                 End
                 Begin CommandButton
+                    Visible = NotDefault
                     OverlapFlags =85
                     AccessKey =84
                     Left =510
@@ -273,6 +274,7 @@ Private Const DefaultWhereTag = "/*{{WHERE}}*/"
 Private Const DefaultSql = "SELECT 0 AS [Id],NULL AS [ParentId], 0 AS [Ilosc], '-BRAK DANYCH-' AS [Opis]"
 
 Private objTreeView As clsTreeViewWithEvent
+Private objTreeViewProperty As New clsTreeViewProperty
 
 Private Const CurrentModeName = "frmTreeView"
 '''''''''Private newTreeViewCaption As String
@@ -359,60 +361,27 @@ End Sub
 Private Sub Form_Open(Cancel As Integer)
     '--- 1 ----
     
-    If IsNull(Me.OpenArgs) Then
-        '''''' ArrData = Array(DefaultFormCaption, DefaultWhereTag, DefaultSql)
-    Else
-       'Debug.Print Me.OpenArgs
+    If Not IsNull(Me.OpenArgs) Then
         Set objTreeView = PtrToObject(Me.OpenArgs)
         objTreeView.ReturnID = 0
         
-        Debug.Print objTreeView.FormCaption     'TO DO
-        Debug.Print objTreeView.FormWhereTag    'TO DO
+        Set objTreeViewProperty = objTreeView.Property
+        
+        Debug.Print objTreeViewProperty.FormCaption
+        Debug.Print objTreeViewProperty.WhereTag
+        
     End If
     
     Call INIT_Data
     Call UtworzPustyRST
     Call UzupelnijDaneListy(1)
-    
-Exit Sub
-''''    '--- 1 ---
-''''
-''''    If IsNull(Me.OpenArgs) Then
-''''        ''''Dim sNaglowek As String
-''''        ''''Dim sWhereTag As String
-''''        '''Dim sSql As String
-''''
-''''
-''''        ''''sNaglowek = "Wybierz z drzewa"
-''''        '''sWhereTag = "/*{{WHERE}}*/"
-''''        ''''sSql = "SELECT 0 AS [Id],NULL AS [ParentId], 0 AS [Ilosc], '-BRAK DANYCH-' AS [Opis]"
-''''        ArrData = Array(sNaglowek, sWhereTag, sSql)
-''''    Else
-''''        ArrData = Split(Me.OpenArgs, ";")
-''''    End If
-''''
-''''    Call INIT_Data
-''''    Call UtworzPustyRST
-''''    Call UzupelnijDaneListy(1)
+
 End Sub
 
 Private Sub INIT_Data()
     'jesli nie przekazan SQL ek to korzystamy z defaultsql
-    Dim objTreeViewProperty As New clsTreeViewProperty
     Dim iLp As Long
     Dim vSql
-    
-    Set objTreeViewProperty = objTreeView.Property
-    
-   'TreeLevels = UBound(Array(objTreeViewProperty.ArrraySql)) - 2 + 1
-   
-''''''    TreeLevels = 3
-''''''
-''''''    ReDim ArraySql(1 To TreeLevels)
-''''''
-''''''    For iLp = 1 To TreeLevels
-''''''        ArraySql(iLp) = objTreeViewProperty.ArrraySql(iLp)
-''''''    Next iLp
     
     TreeLevels = UBound(objTreeViewProperty.AllSql()) + 1
     ReDim ArraySql(1 To TreeLevels)
@@ -422,78 +391,6 @@ Private Sub INIT_Data()
         ArraySql(iLp) = vSql
        'Debug.Print vSql
     Next vSql
-    
-Exit Sub
-    
-    Debug.Print objTreeViewProperty.ArrraySql(0)
-    
-    Dim varTV As Object
-    Dim bBrakObiektu As Boolean
-    
-    If objTreeView Is Nothing Then
-        bBrakObiektu = True
-    Else
-        Set varTV = objTreeView.Property
-        
-        If IsNull(varTV) Then
-            bBrakObiektu = True
-        Else
-            '''''ReDim Preserve ArraySql(1 To TUTAJ ILOSC POZIOMOW)
-            
-            'Dim TreeViewProperty As vbaTreeViewProperty
-            'TreeViewProperty = varTV
-            'ArraySql = TreeViewProperty.ArrraySql
-            
-'''''            ArraySql = varTV.ArrraySql()
-            Dim vRowWithSql
-            Dim iLpSql As Single
-            
-           'For Each vRowWithSql In varTV
-            For Each vRowWithSql In varTV
-                iLpSql = iLpSql + 1
-                ArraySql(iLpSql) = vRowWithSql
-            Next vRowWithSql
-        End If
-    
-    End If
-    
-    If bBrakObiektu Then
-        'ReDim Preserve ArraySql(1 To 1)
-         ReDim ArraySql(1 To 1)
-         ArraySql(1) = DefaultSql
-    End If
-    
-Exit Sub
-    
-    'TO DO - 1 - sprawdzami ile jest przekaznych SQL'ek
-    'TO DO - 2 - ladujemy SQl do ArraySql
-    
-''''''    TreeLevels = UBound(ArrData) - 2 + 1
-''''''
-''''''    Dim sNaglowek As String
-''''''    Dim vRow
-''''''    Dim iPoz As Single
-''''''
-''''''    ReDim ArraySql(1 To TreeLevels)
-''''''
-''''''    For Each vRow In ArrData
-''''''        If Len(sNaglowek) = 0 Then
-''''''           'sNaglowek = ArrData(0)
-''''''            sNaglowek = vRow
-''''''        Else
-'''''''''''            If Len(SqlWhereTag) = 0 Then
-'''''''''''               'sNaglowek = ArrData(1)
-'''''''''''                SqlWhereTag = vRow
-'''''''''''            Else
-''''''                iPoz = iPoz + 1
-''''''                ArraySql(iPoz) = vRow
-''''''               'ReDim Preserve ArraySql(1 To iPoz)
-'''''''''            End If
-''''''        End If
-''''''
-''''''    Next vRow
-
-    ''''''''''''If Len(sNaglowek) > 0 Then newTreeViewCaption = sNaglowek
     
 End Sub
 
@@ -511,8 +408,8 @@ End Sub
 Private Sub SetTreeViewCaption(Optional bTranslate As Boolean = True)
     Dim sFormCaption$
     
-    If Not objTreeView Is Nothing Then
-        sFormCaption = objTreeView.FormCaption
+    If Not objTreeViewProperty Is Nothing Then
+        sFormCaption = objTreeViewProperty.FormCaption
     End If
     
     If Len(Trim(sFormCaption)) = 0 Then
@@ -715,8 +612,8 @@ Private Sub UzupelnijDaneListy(UpdateLevel As Long, Optional SqlWhereCondition A
     Dim iLp As Long
     
     '--- set Where Tag --- --- --- --- --- ---
-    If Not objTreeView Is Nothing Then
-        SqlWhereTag = objTreeView.FormWhereTag
+    If Not objTreeViewProperty Is Nothing Then
+        SqlWhereTag = objTreeViewProperty.WhereTag
     End If
     
     If Len(SqlWhereTag) = 0 Then
